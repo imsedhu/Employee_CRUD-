@@ -6,8 +6,10 @@
 }
 
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
+  margin: auto;
+  margin-top: 10px;
 }
 
 table, th, td {
@@ -16,7 +18,8 @@ table, th, td {
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: rgb(0, 162, 255);
+  color: white;
 }
 
 h1 {
@@ -32,30 +35,56 @@ h1 {
   text-align: center;
 }
 #employeeForm {
-  width: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 #employeeForm label {
-  display: block;
-  margin: 7px;
   font-weight: 600;
   color: blueviolet;
 }
 #employeeForm input {
   width: 95%;
   padding: 7px;
-  margin:5x;
   border-radius: 5px;
   border: solid 1px gray;
   background-color: rgb(228, 223, 223);
 }
 #employeeForm button {
-  width: 50%;
+  width: 30%;
   padding: 10px;
   background-color: blueviolet;
   border: solid 1px;
-  margin: 8px;
+  margin-bottom: 8px;
   color: white;
   border-radius: 20px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-btn {
+  background-color: green;
+  color: white;
+  padding: 4px;
+  border: 0px solid ;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  padding: 4px;
+  border: 0px solid ;
+}
+
+@media (max-width: 542px) {
+  h1{
+    font-size: 18px;
+  }
+  #formdiv {
+    width: 100%;
+  }
 }
